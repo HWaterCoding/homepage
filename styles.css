@@ -1,3 +1,10 @@
+/* Themes and Variables */
+:root{
+    
+}
+
+
+/* Default Stylings */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -38,82 +45,144 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Placeholder */
-body img{
-    width: 24px;
-    height: 24px;
+/* Set all icons to be a fixed 24x24px size (maybe change later) */
+.header-icons img,
+.project-icons img,
+.contact-info img{
+  width: 24px;
+  height: 24px;
 }
 
+
 html{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
 }
 
 body{
-    max-width: 80%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(214, 199, 172);
+  gap: 50px;
+  padding: 35px;
 }
 
 /* Header Section */
 header{
-    background-color: red;
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+header picture > img{
+  width: 600px;
+  height: auto;
 }
 
 .about-me-card{
-    border: 1px solid black;
+  max-width: 500px;
+  background-color: rgb(218, 223, 218);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+}
+
+.about-me-card p{
+  font-size: 1.4rem;
 }
 
 .header-icons{
-    border: 1px solid white;
-    display: flex;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
 }
+
 
 
 
 
 /* Main Section */
 main{
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 main h1{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .card-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
 }
 
-
 .project-card{
-    border: 2px red solid;
+  background-color: beige;
+  border: 2px red solid;
 }
 
 .project-card > img{
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.project-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 
 
 /* Footer Section */
 footer{
-    background-color: greenyellow;
-    width: 100%;
-    flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.contact-info{
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(218, 223, 218);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact-info p{
+  display: flex;
+  gap: 4px;
+}
+
+.contact-icons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+
+
+footer picture > img{
+  width: 600px;
+  height: auto;
 }
