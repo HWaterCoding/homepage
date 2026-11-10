@@ -129,6 +129,8 @@ main h1{
 .project-card{
   background-color: beige;
   border: 2px red solid;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card > img{
@@ -141,12 +143,14 @@ main h1{
   flex-direction: column;
   gap: 5px;
   padding: 10px;
+  flex: 1;
 }
 
 .project-icons{
   display: flex;
   justify-content: flex-end;
   gap: 5px;
+  margin-top: auto;
 }
 
 
