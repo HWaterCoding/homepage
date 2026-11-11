@@ -48,15 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Set all icons to be a fixed 24x24px size (maybe change later) */
-/* .header-icons img,
-.project-icons img,
-.contact-info img{
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.2s ease, filter 0.2s ease;
-} */
-
+/* SVG VERSION */
 .header-icons img,
 .project-icons img,
 .contact-info img{
@@ -66,12 +58,31 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 0.2s ease, filter 0.2s ease; 
 }
 
-.header-icons a:hover img,
-.project-icons a:hover img,
-.contact-icons a:hover img {
-  transform: scale(1.15);
-  filter: brightness(0) invert(0.7);
+
+
+
+/* ICON VERSION */
+.header-icons a,
+.contact-icons a{
+  color: rgb(228, 168, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
+
+.header-icons i,
+.contact-icons i{
+  font-size: clamp(26px, 2vw, 40px);
+}
+
+.header-icons a:hover,
+.contact-icons a:hover{
+  color: rgb(215, 96, 245);
+  transform: scale(1.15);
+}
+
 
 
 html{
@@ -205,6 +216,7 @@ footer{
 .contact-info{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   background: var(--section-background);
   border: 2px solid var(--section-border);
   box-shadow: 5px 5px 15px rgb(0, 0, 0);
@@ -214,9 +226,14 @@ footer{
   flex: 1;
 }
 
+.contact-info h1{
+  color: #fff;
+}
+
 .contact-info p{
   display: flex;
-  gap: 4px;
+  align-items: center;
+  gap: 8px;
 }
 
 .contact-icons{
