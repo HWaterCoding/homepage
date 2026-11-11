@@ -53,9 +53,17 @@ h1, h2, h3, h4, h5, h6 {
 .contact-info img{
   width: 24px;
   height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 
+.header-icons a:hover img,
+.project-icons a:hover img,
+.contact-icons a:hover img {
+  transform: scale(1.15);
+  filter: brightness(0) invert(0.7);
+}
 
 
 html{
