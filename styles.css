@@ -63,7 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ICON VERSION */
 .header-icons a,
-.contact-icons a{
+.contact-icons a,
+.project-icons a{
   color: rgb(228, 168, 243);
   display: flex;
   align-items: center;
@@ -77,8 +78,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: clamp(26px, 2vw, 40px);
 }
 
+.project-icons i{
+  font-size: 24px;
+}
+
 .header-icons a:hover,
-.contact-icons a:hover{
+.contact-icons a:hover,
+.project-icons a:hover{
   color: rgb(215, 96, 245);
   transform: scale(1.15);
 }
@@ -200,7 +206,7 @@ main h1{
 .project-icons{
   display: flex;
   justify-content: flex-end;
-  gap: 5px;
+  gap: 8px;
   margin-top: auto;
 }
 
