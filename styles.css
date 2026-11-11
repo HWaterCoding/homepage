@@ -48,15 +48,23 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Set all icons to be a fixed 24x24px size (maybe change later) */
-.header-icons img,
+/* .header-icons img,
 .project-icons img,
 .contact-info img{
   width: 24px;
   height: 24px;
   filter: brightness(0) invert(1);
   transition: transform 0.2s ease, filter 0.2s ease;
-}
+} */
 
+.header-icons img,
+.project-icons img,
+.contact-info img{
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.2s ease; 
+}
 
 .header-icons a:hover img,
 .project-icons a:hover img,
