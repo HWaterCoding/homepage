@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-icons a,
 .contact-icons a,
 .project-icons a{
-  color: rgb(228, 168, 243);
+  color: rgb(215, 96, 245);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-icons a:hover,
 .contact-icons a:hover,
 .project-icons a:hover{
-  color: rgb(215, 96, 245);
+  color: rgb(228, 168, 243);
   transform: scale(1.15);
 }
 
@@ -104,7 +104,7 @@ body{
   align-items: center;
   margin-inline: auto;
   background-color: transparent;
-  gap: 50px;
+  gap: 150px;
   padding: 35px;
 }
 
@@ -113,7 +113,7 @@ header{
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 header picture{
@@ -151,6 +151,7 @@ header picture > img{
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  margin-top: auto;
 }
 
 
@@ -216,7 +217,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .contact-info{
